@@ -1,0 +1,145 @@
+.slider {
+    &__box {
+        display: flex;
+    }
+    &__bcg {
+        background-color: #5C3249;
+        text-align: left;
+        margin-bottom: 38px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        height: 490px;
+    }
+
+    &__bcg-text {
+        max-width: 471px;
+
+    }
+
+    &__text {
+        font-family: 'Cardo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+        margin-top: 0px;
+
+    }
+
+    &__author {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+
+    }
+   .slider__btn {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border:1px solid #7E5D6F;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    .carousel-indicators{
+        bottom:-30px
+    }
+    .carousel-indicators .active {
+        opacity: 1;
+        background-color: #7e5d6f;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .slider {
+
+        &__photo {
+            max-width: 502px;
+            max-height: 332px;
+        }
+        &__bcg {
+            margin-bottom: 26px;
+            height: 332px;
+            align-items: flex-start;
+        }
+    
+        &__bcg-text {
+            max-width: 330px;
+            margin-top: 55px;
+        }
+    
+        &__text {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 26px;
+        }
+    
+        &__author {
+            font-size: 12px;
+            line-height: 14px;
+        }
+       .slider__btn {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .slider {
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img{
+            height: 212px;
+        }
+        &__photo{
+            height: 212px;
+            width: 100%;
+        }
+        &__bcg {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            justify-content: center;
+            height:326px;
+
+        }
+        &__bcg-text {
+            text-align: center;
+            width: 275px;
+            margin-top: 30px;
+        }
+    
+        &__text {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 34px;
+    
+        }
+        &__author {
+            font-size: 12px;
+            line-height: 14px;
+        }
+       .slider__btn {
+            width: 9px;
+            height: 9px;
+            margin-right: 20px;
+        }
+        .carousel-indicators{
+            bottom:-20px
+        }
+    }
+    
+}

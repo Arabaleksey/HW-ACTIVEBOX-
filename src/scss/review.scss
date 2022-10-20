@@ -1,0 +1,164 @@
+.review {
+
+    &__container {
+        margin: 0 auto;
+        padding-bottom: 114px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding-top: 116px;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        flex: 0 1 270px;
+        display: flex;
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    &__img{
+        margin-bottom: 35px;
+    }
+    &__photo-mob{
+        display: none;
+    }
+
+    &__name {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2D3033;
+        margin-bottom: 16px;
+    }
+
+    &__job {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FF4343;
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #6C7279;
+        margin-bottom: 40px;
+
+    }
+
+    &__icons {
+        display: flex;
+    }
+    &__link{
+        margin-right: 6px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .review {
+        &__container {
+            padding-bottom: 78px;
+            
+        }
+    
+        &__row {
+            padding-top: 78px;
+            margin: 0 -12px;
+        }
+    
+        &__wrapper {
+            flex: 0 1 227px;
+            padding: 0 12px;
+        }
+        &__img{
+            margin-bottom: 25px;
+        }
+        &__photo{
+            max-width: 227px;
+            max-height: 227px;
+        }
+        &__name {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 5px;
+        }
+    
+        &__job {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 22px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 16px;    
+        }
+    
+        &__icons {
+            display: flex;
+        }
+        &__link{
+            margin-right: 6px;
+            max-width: 33px;
+            max-height: 33px;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .review {
+        &__container {
+            padding-bottom: 0px;
+        }
+        &__row {
+            padding-top: 35px;
+        }
+    
+        &__wrapper {
+            flex: 0 1 280px;
+        }
+        &__img{
+            margin-bottom: 33px;
+        }
+        &__photo{
+           display: none;
+        }
+        &__photo-mob{
+            display: block;
+         }
+    
+        &__name {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 8px;
+        }
+    
+        &__job {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 38px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 55px;
+    
+        }
+    
+        &__icons {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        &__link{
+            margin-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.button {
+    margin-top: 82px;
+    height: 78px;
+    width: 369px;
+    border: none;
+    background-color:#FF4343;
+    color:#fff;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    cursor: pointer;
+    &:hover{
+        background-color:#E71414;
+    }
+    &:active{
+        background-color: #FF4343;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .container{
+        max-width: 984px;
+    }
+    .button {
+        height: 78px;
+        width: 313px;
+    }
+}
+@media screen and (max-width:320px) {
+    .container{
+        max-width: 280px;
+    }
+    .button {
+        height: 58px;
+        width: 280px;
+        height: 77px;
+    }
+}

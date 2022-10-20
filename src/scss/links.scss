@@ -1,0 +1,128 @@
+.links {
+    padding-bottom: 71px;
+    padding-top: 71px;
+    background-color: #353C65;
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        justify-content: center;
+    }
+    &__box {
+        text-align: center;
+        flex: 0 1 370px;
+        display: flex;
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-bottom: 29px;
+    }
+
+    &__subtitle {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    &__social {
+        margin-top: 20px;
+        a{
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .links {
+        padding-bottom: 45px;
+        padding-top: 45px;
+        &__row{
+            margin: 0 -10px;
+        }
+        &__box {
+            flex: 0 1 315px;
+            padding: 0 10px;
+        }
+    
+        &__title {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 17px;
+        }
+    
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    
+        &__social {
+            img{
+                max-width: 33px;
+                max-height: 33px;
+            }
+            margin-top: 20px;
+            a{
+                margin-right: 23px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .links {
+        padding-bottom: 34px;
+        padding-top: 34px;
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            justify-content: center;
+        }
+        &__box {
+            flex: 0 1 280px;
+            margin-bottom: 70px;
+            &:last-child{ 
+                margin-bottom: 0;
+            }
+           
+        }
+    
+        &__title {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 34px;
+        }
+    
+        &__subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+
+        }
+    
+        &__social {
+            margin-top: 20px;
+            a{
+                margin-right: 20px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

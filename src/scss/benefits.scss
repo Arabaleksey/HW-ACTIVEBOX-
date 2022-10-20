@@ -1,0 +1,115 @@
+.benefits {
+
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        padding-top: 116px;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        flex: 0 1 370px;
+        display: flex;
+        margin-bottom: 100px;
+        padding: 0 15px;
+    }
+
+    &__column{
+        width: 370px;
+    }
+    &__img {
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    &__header {
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2D3033;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #6C7279;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1024px) {
+
+    .benefits {
+        &__row {
+            margin: 0 -10px;
+            padding-top: 78px;
+            padding-bottom: 28px;
+        }
+        &__wrapper {
+            flex: 0 1 314px;
+            margin-bottom: 50px;
+            padding: 0 10px;
+        }
+        &__column{
+            width: 314px;
+        }
+        &__img {
+            margin-bottom: 40px;
+        }
+        &__svg{
+            max-width: 85px;
+            max-height: 84px;
+        }
+        &__header {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 20px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .benefits {
+        &__row {
+            padding-top: 40px;
+        }
+    
+        &__wrapper {
+            flex: 0 1 279px;
+            margin-bottom: 34px;
+        }
+        &__column{
+            width: 279px;
+        }
+        &__img {
+            margin-bottom: 40px;
+        }
+        &__svg{
+            max-width: 75px;
+            max-height: 74px;
+        }
+    
+        &__header {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
